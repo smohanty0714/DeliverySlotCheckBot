@@ -7,21 +7,19 @@ To make my life bit easier I thought, let's employ a Bot to do the same task for
 
 ### prerequisite
 > Python 3 <br>
-> Chrome Selenium Driver <br>
-> Chrome Application 
+> Firfox Selenium Driver <br>
+> Firfox Application 
 
 ### setup steps
 1. Install the Python 3 and pip3 - https://realpython.com/installing-python/
-2. Download Selenium Firefox Driver based on your OS - https://github.com/mozilla/geckodriver/releases https://chromedriver.chromium.org/getting-started 
+2. Download Selenium Firefox Driver based on your OS - https://github.com/mozilla/geckodriver/releases 
 3. Install Firefox Application
 4. Create a python virtual environment using `python -m venv delivery_slot_venv`
-5. Enable the virtual env (for ios - `source /delivery_slot_venv/bin/activate`) 
+5. Enable the virtual env (for ios/linux - `source /delivery_slot_venv/bin/activate` and for windows `\delivery_slot_venv\Scripts\activate.bat`) 
 6. Checkout this code to your system and go the home of this code base, run the requirement.txt file to install all python    dependencies - `pip3 install -r requirements.txt` . else, install the packages listed on the file manually. 
 7. Go to the https://www.twilio.com/ and create a free account for the SMS service and update the credentials, your mobile number on `/bot/check/props.py`
-8. Post successful installation of packages, navigate to `/bot/check/props.py` and update the credentials required for sms service, login authentication credentials and As well, update the slenium firefox, chrome driver path. 
-8. On the `SlotCheckBot.py` update the slot checking time interval in seconds. Currently, its has been set to 5 min(300 seconds) .  <i>Note: don't make it less than 5 mins as destination server can detect it as a Bot and will block your IP/hostname.</i>
-9. Go to the https://www.twilio.com/ and create a free account for the SMS service and update the credentials, your mobile number on `WaangooSlotCheck.py` file
-10. Now run the Bot - `python3 SlotCheckBot.py` and Bot will check the slot availability and send SMS notification once it sees the available slots.
+8. Post successful installation of packages, navigate to `/bot/check/props.py` and update the credentials required for sms service, login authentication credentials (if you are using redmart then its required , your lazada credentials) and As well, update the slenium firefox driver path. 
+9.Now run the Bot - `python3 SlotCheckBot.py <site_name - eg. waangoo / redmart> <time_interval - eg. 300>` and Bot will check the slot availability randomly based on given time interval and send SMS notification once it sees the available slots.<i>Note: don't make `time_interval` less than 5 mins as destination server can detect it as a Bot and will block your IP/hostname.</i>
 
 ## If you wish to deploy it into AWS trail EC2, then here is a detail guide that will help :
 https://medium.com/@praneeth.jm/running-chromedriver-and-selenium-in-python-on-an-aws-ec2-instance-2fb4ad633bb5
