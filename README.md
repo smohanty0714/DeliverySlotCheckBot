@@ -5,7 +5,7 @@ To make my life bit easier I thought, let's employ a Bot to do the same task for
 
 This implemention has been done for below two popular online grocery sites based in singapore and you can extend this code to create a bot of your favorite online shopping site:
 
-> https://redmart.lazada.sg/
+> https://redmart.lazada.sg/ <br>
 > https://www.waangoo.com/
 
 ## Setup Instructions
