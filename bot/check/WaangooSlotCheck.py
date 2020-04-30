@@ -1,21 +1,19 @@
 from selenium import webdriver
 from time import sleep
 from twilio.rest import Client
-from .props import account_sid, auth_token, to_n, from_n, chrome_driver_path
+from .props import account_sid, auth_token, to_n, from_n, firefox_driver_path
 from random import randint
+from selenium.webdriver.firefox.options import Options
 
 
 class WaangooSlotCheck:
     def __init__(self):
 
         # initiate your selenium webdriver as a headless browser
-        chromeoptions = webdriver.ChromeOptions()
-        chromeoptions.add_argument("start-maximized")
-        chromeoptions.add_argument("--window-size=1920,1080")
-        chromeoptions.add_argument('--disable-gpu')
-        # chromeoptions.add_argument("--remote-debugging-port=9222")
-        chromeoptions.add_argument("--headless")
-        self.driver = webdriver.Chrome(options=chromeoptions, executable_path=chrome_driver_path)
+        # initiate your selenium webdriver as a headless browser
+        options = Options()
+        options.headless = True
+        self.driver = webdriver.Firefox(options=options, executable_path=firefox_driver_path)
 
         # Your Account SID from twilio.com/console
         self.account_sid = account_sid
