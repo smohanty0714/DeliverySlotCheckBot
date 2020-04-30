@@ -8,7 +8,7 @@ This implemention has been done for below two popular online grocery sites based
 > https://redmart.lazada.sg/ <br>
 > https://www.waangoo.com/
 
-<i>Note :  Excuse on the some coding standards as created with limited time</i>
+<i>Note :  Excuse on some coding standards as created with limited time</i>
 
 ## Setup Instructions
 
