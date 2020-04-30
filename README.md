@@ -1,5 +1,5 @@
 # Delivery Slot Check Python Bot
-In current COVID-19 pandemic situation, online grocessary comes as a saviour,  but, unfortunatly , we do struggle in getting a delivery slot in our trusted online grocery store due to overwhelming orders. Personally, I struggled a lot to get a delivery slot as, delivery slots are limited and also not able to know when the slots are getting open/ available. So, usually I go check over and over on the site whether slots are available or not,  and honstly, its really ridiculous and frustrating activity to do. 
+In current COVID-19 pandemic situation, online grocery comes as a saviour,  but, unfortunatly , we do struggle in getting a delivery slot in our trusted online grocery store due to overwhelming orders. Personally, I struggled a lot to get a delivery slot as, delivery slots are limited and also not able to know when the slots are getting open/ available. So, usually I go check over and over on the site whether slots are available or not,  and honstly, its really ridiculous and frustrating activity to do. 
 
 To make my life bit easier I thought, let's employ a Bot to do the same task for me. So, this bot is going to check the delivery slots availability within a configured time interval and will trigger a SMS notification immediately to my given mobile number once it see the available slots. 
 
