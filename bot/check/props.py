@@ -10,5 +10,5 @@ secrets = 'xxxx'
 
 # driver path
 chrome_driver_path = '/Users/sumohanty/Documents/chromedriver'
-firefox_driver_path = '/Users/sumohanty/Documents/geckodriver'
+firefox_driver_path = 'geckodriver'
 
